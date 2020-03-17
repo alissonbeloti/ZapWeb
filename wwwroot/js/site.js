@@ -23,7 +23,7 @@ function HabilitarLogin() {
         btnAcessar.addEventListener("click", function () {
             var email = document.getElementById("email").value;
             var senha = document.getElementById("senha").value;
-
+             
             var usuario = {
                 Email: email,
                 Senha: senha,

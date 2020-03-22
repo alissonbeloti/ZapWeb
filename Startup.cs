@@ -30,7 +30,7 @@ namespace ZapWeb
             services.AddDbContext<ZapContext>(cfg => {
                 cfg.UseSqlite("Data Source=Database\\ZapWeb.db");
             });
-            services.AddSignalR();
+            services.AddSignalR(cfg => cfg.EnableDetailedErrors = true);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

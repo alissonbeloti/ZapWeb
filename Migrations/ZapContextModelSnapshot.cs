@@ -48,7 +48,7 @@ namespace ZapWeb.Migrations
                     b.Property<string>("Texto")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Usuario")
+                    b.Property<string>("UsuarioJSON")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
